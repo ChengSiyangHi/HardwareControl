@@ -1,8 +1,9 @@
 %% Calibration_Zscan_MCL_PiezoStages
 % Code for controlling the MCL stages to take z scans for DHPSF calibration
-% Current version: ccamera in continuous mode
+% Current version: ccamera in edge triggering mode
+% A csv file for EasyDHPSF calibration is generated
 
-% Last modified on Aug 24, 2023 by Siyang Cheng
+% Last modified on Aug 24, 2023 by Siyang Cheng (sc201@rice.edu)
 
 
 clear
@@ -123,7 +124,7 @@ end
 for i=1:nFrames_per_step:((scanRange/stepSize+1)*nFrames_per_step)
     book(i,1:3)=-1;
 end
-writematrix(book,['Z:\ag134\New setup\','EasyDHPSF','range',num2str(scanRange),'um_','stepSize',num2str(stepSize),'um_','FramesPerStep',num2str(nFrames_per_step),'.csv']);
+writematrix(book,['Z:\ag134\','EasyDHPSF','range',num2str(scanRange),'um_','stepSize',num2str(stepSize),'um_','FramesPerStep',num2str(nFrames_per_step),'.csv']);
 
 %% Manually refocus the microscope
 disp('Please manually focus the microscope. DISABLE THE PFS. When finish, press Enter.')
