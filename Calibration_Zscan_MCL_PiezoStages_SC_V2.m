@@ -1,8 +1,8 @@
 %% Calibration_Zscan_MCL_PiezoStages
 % Code for controlling the MCL stages to take z scans for DHPSF calibration
-% Current version: ccamera in continuous mode
+% Current version: ccamera in edge triggering mode
 
-% Last modified on Aug 23, 2023 by Siyang Cheng
+% Last modified on Aug 23, 2023 by Siyang Cheng (sc201@rice.edu)
 
 
 clear
