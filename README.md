@@ -1,5 +1,6 @@
 # HardwareControl
 Matlab code for controlling hardware equipments in a optics lab, specifically for piezo stages from Mad City Labs and sCOMS cameras from Photometrics.
+Visit our lab website: https://gustavssonlab.rice.edu/
 
 ## Calibrarion code V1: 
 The piezo stage stops at each Z position, and the camera aquires data continuously.
