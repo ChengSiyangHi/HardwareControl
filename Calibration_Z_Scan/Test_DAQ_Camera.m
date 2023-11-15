@@ -22,7 +22,7 @@ lagTime = 0.05; % after each frame [s]
 
 
 
-%% Test taking a ccan
+%% Test taking a scan
 for frameNo = 1:nFrames_per_step
     frameNo
     outputSingleScan(cameraRed,5); % start exposure
